@@ -43,33 +43,37 @@ Backend prevents duplicates, handles voting to skip.
 Store song metadata + votes in Redis/Postgres.
 👉 Fun live demo at student parties.
 
+5. HTTP Server Built on a Raw TCP Server
+* The TCP server listens for client connections, accepts raw byte streams, and then parses the HTTP request format (method, path, headers, and body).
+* Strengthens skills in network programming, parsing protocols, and managing connections.
+
 
 
 
 # quicker projects that focus on learning
 
-(5) Reverse Proxy with Load Balancing
+(11) Reverse Proxy with Load Balancing
 Implement a proxy server in Go/Rust.
 
 Support round-robin, least-connections, weighted load balancing.
 
 Add health checks + failover.
 
-(19) Service Discovery + Registry Like Consul or etcd-lite.
+(22) Service Discovery + Registry Like Consul or etcd-lite.
 * In a microservices architecture, services (auth, payments, notifications, etc.) run on many machines or containers.
 
 * Containers often get dynamic IP addresses (e.g., in Kubernetes, AWS ECS, GCP Cloud Run).
 
 * Hardcoding addresses (like http://10.0.0.5:8080) doesn’t work because machines can move, die, or scale up/down.
 
-14. Distributed Cache
+(33) Distributed Cache
 In-memory cache cluster with eviction policies (LRU/LFU).
 
 Support replication + consistent hashing.
 Expose gRPC/HTTP APIs.
 
 
-4. Live Network Latency Visualizer Across Multiple Locations
+(44) Live Network Latency Visualizer Across Multiple Locations
 🧩 Like: a “PingMap” of server health
 Features:
 * Deploy ping agents to multiple cloud regions (EC2, fly.io, etc.)
@@ -86,9 +90,7 @@ Why it's 🔥:
 * Teaches you about real-world latency and reliability
 
 
-
-
-Music Recommender from Lyrics + Tempo + Vibes
+(55) Music Recommender from Lyrics + Tempo + Vibes
 Scrape lyrics + audio metadata and build a hybrid content-based recommender.
 * Use: Lyrics embedding (BERT) + tempo + mood metadata
 * Build scoring function based on user listening habits
