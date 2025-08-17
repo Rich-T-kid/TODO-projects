@@ -1,4 +1,17 @@
 # TODO-projects
+
+MINI projects (day long, just get the gist of the concept)
+* Build Buffer pool 
+* Write a join 
+* Implement a B+ Tree
+* Implement a skip list
+* Implement K-way external merge
+* Write a sql parser
+* Write a logical planner from an sql query
+* Write a logical to physical planner
+* Implement a Write ahead log
+  
+
 7. Database Query Optimizer Playground
 * Browser or mobile app frontend to visualize query plans
 * Backend in Go/Rust to:
@@ -25,20 +38,6 @@ Store song metadata + votes in Redis/Postgres.
 👉 Fun live demo at student parties.
 
 
-MINI projects (day long, just get the gist of the concept)
-* Build Buffer pool 
-* Write a join 
-* Implement a B+ Tree
-* Implement a skip list
-* Implement K-way external merge
-* Write a sql parser
-* Write a logical planner from an sql query
-* Write a logical to physical planner
-* Implement a Write ahead log
-
-
-
-
 
 
 Later:
@@ -50,12 +49,6 @@ Support round-robin, least-connections, weighted load balancing.
 
 Add health checks + failover.
 
-9. Service Discovery + Registry
-Like Consul or etcd-lite.
-
-Services register themselves.
-
-Clients query for available instances.
 
 14. Distributed Cache
 In-memory cache cluster with eviction policies (LRU/LFU).
@@ -89,19 +82,6 @@ Why it's 🔥:
 * Teaches you about real-world latency and reliability
 
 
-1. Distributed Job Queue with Retry, Backoff, and Deduplication
-🧩 Like: Sidekiq, BullMQ, or Celery — but minimal and Go-based
-Features:
-* Job producer API (HTTP or gRPC)
-* Redis/Kafka-based task queue
-* Worker that executes jobs and retries with exponential backoff
-* Dashboard (CLI or Web) for monitoring jobs
-* Optional: add deduplication using hashes
-* Optional: support for priorities or scheduling (run at X time)
-Tech:
-* Go + Redis or NATS
-* Optional UI in Python/React
-* Deploy via Docker Compose
 
 
 Music Recommender from Lyrics + Tempo + Vibes
