@@ -8,6 +8,22 @@
 * Optional: Python notebooks to simulate queries with metrics
 🧠 Shows deep DB internals knowledge 📂 Recruiters at infra/database companies will LOVE this
 
+Lecture Q&A System with Ranking
+Live question posting + upvote/downvote (like Stack Overflow in class).
+
+Needs real-time WebSockets and distributed storage.
+
+Backend handles hot-spot traffic (everyone upvoting the same Q).
+👉 Great to show scalability under bursty loads.
+
+Music Queue for Parties (Distributed Jukebox)
+Guests join via QR code, queue songs.
+
+Backend prevents duplicates, handles voting to skip.
+
+Store song metadata + votes in Redis/Postgres.
+👉 Fun live demo at student parties.
+
 
 MINI projects (day long, just get the gist of the concept)
 * Build Buffer pool 
@@ -27,6 +43,34 @@ MINI projects (day long, just get the gist of the concept)
 
 Later:
 
+(5) Reverse Proxy with Load Balancing
+Implement a proxy server in Go/Rust.
+
+Support round-robin, least-connections, weighted load balancing.
+
+Add health checks + failover.
+
+9. Service Discovery + Registry
+Like Consul or etcd-lite.
+
+Services register themselves.
+
+Clients query for available instances.
+
+14. Distributed Cache
+In-memory cache cluster with eviction policies (LRU/LFU).
+
+Support replication + consistent hashing.
+
+Expose gRPC/HTTP APIs.
+
+3. Distributed Notes/Docs System (Google Docs–lite)
+Support concurrent edits with CRDTs or OT (operational transforms).
+
+Store history in a log + snapshots.
+
+Deploy across multiple nodes.
+👉 Hits both databases + networking.
 
 4. Live Network Latency Visualizer Across Multiple Locations
 🧩 Like: a “PingMap” of server health
