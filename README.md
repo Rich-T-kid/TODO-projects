@@ -8,7 +8,7 @@
 * Optional: Python notebooks to simulate queries with metrics
 🧠 Shows deep DB internals knowledge 📂 Recruiters at infra/database companies will LOVE this
 
-Lecture Q&A System with Ranking
+(8) Lecture Q&A System with Ranking
 Live question posting + upvote/downvote (like Stack Overflow in class).
 
 Needs real-time WebSockets and distributed storage.
@@ -16,7 +16,7 @@ Needs real-time WebSockets and distributed storage.
 Backend handles hot-spot traffic (everyone upvoting the same Q).
 👉 Great to show scalability under bursty loads.
 
-Music Queue for Parties (Distributed Jukebox)
+(9) Music Queue for Parties (Distributed Jukebox)
 Guests join via QR code, queue songs.
 
 Backend prevents duplicates, handles voting to skip.
