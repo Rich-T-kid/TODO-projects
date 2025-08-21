@@ -32,19 +32,6 @@ Needs real-time WebSockets and distributed storage.
 Backend handles hot-spot traffic (everyone upvoting the same Q).
 👉 Great to show scalability under bursty loads.
 
-## 4. Music Queue for Parties (Distributed Jukebox)
-Guests join via QR code, queue songs.
-
-Backend prevents duplicates, handles voting to skip.
-
-Store song metadata + votes in Redis/Postgres.
-👉 Fun live demo at student parties.
-
-## 5. HTTP Server Built on a Raw TCP Server
-* The TCP server listens for client connections, accepts raw byte streams, and then parses the HTTP request format (method, path, headers, and body).
-* Strengthens skills in network programming, parsing protocols, and managing connections.
-
-
 
 
 # quicker projects that focus on learning
@@ -69,6 +56,10 @@ In-memory cache cluster with eviction policies (LRU/LFU).
 Support replication + consistent hashing.
 Expose gRPC/HTTP APIs.
 
+## 5. HTTP Server Built on a Raw TCP Server
+* The TCP server listens for client connections, accepts raw byte streams, and then parses the HTTP request format (method, path, headers, and body).
+* Strengthens skills in network programming, parsing protocols, and managing connections.
+
 
 # (44) Live Network Latency Visualizer Across Multiple Locations
 🧩 Like: a “PingMap” of server health
@@ -85,6 +76,13 @@ Why it's 🔥:
 * Distributed, real-world use case
 * Gives you a strong visual demo
 * Teaches you about real-world latency and reliability
+
+## 4. Music Queue for Parties (Distributed Jukebox)
+Guests join via QR code, queue songs.
+
+Backend prevents duplicates, handles voting to skip.
+
+Store song metadata + votes in Redis/Postgres.
 
 
 # (55)
