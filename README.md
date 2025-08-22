@@ -36,7 +36,7 @@ Backend handles hot-spot traffic (everyone upvoting the same Q).
 
 # quicker projects that focus on learning
 
-##  (11) Reverse Proxy with Load Balancing
+##  (11) Reverse Proxy with Load Balancing Repo -> (https://github.com/Rich-T-kid/PivotProxy)
 Implement a proxy server in Go/Rust.
 Support round-robin, least-connections, weighted load balancing.
 Add health checks + failover.
