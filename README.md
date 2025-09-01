@@ -36,23 +36,15 @@ Backend handles hot-spot traffic (everyone upvoting the same Q).
 
 # quicker projects that focus on learning
 
-##  (11) Reverse Proxy with Load Balancing Repo -> (https://github.com/Rich-T-kid/PivotProxy)
-Implement a proxy server in Go/Rust.
-Support round-robin, least-connections, weighted load balancing.
-Add health checks + failover.
+##  (11) ~~Reverse Proxy with Load Balancing~~ (Repo) -> (https://github.com/Rich-T-kid/PivotProxy)
+* Implement a proxy server in Go/Rust.
+* Support round-robin, least-connections, weighted load balancing.
+* Add health checks + failover.
 
-## (22) Service Discovery + Registry Like Consul or etcd-lite.
+## (22) Service Discovery + Registry Like Consul or etcd-lite. (Repo) -> (https://github.com/Rich-T-kid/RouteFinder)
 * In a microservices architecture, services (auth, payments, notifications, etc.) run on many machines or containers.
 * Containers often get dynamic IP addresses (e.g., in Kubernetes, AWS ECS, GCP Cloud Run).
 * Hardcoding addresses (like http://10.0.0.5:8080) doesn’t work because machines can move, die, or scale up/down.
-
-# Later down the line/ slighly more complex and time consuming
-## (33) Distributed Cache
-In-memory cache cluster with eviction policies (LRU/LFU).
-
-Support replication + consistent hashing.
-Expose gRPC/HTTP APIs.
-
 
 ## (44) Live Network Latency Visualizer Across Multiple Locations
 🧩 Like: a “PingMap” of server health
@@ -61,15 +53,13 @@ Features:
 * Central dashboard aggregates results
 * Visualize latency and outages in a map or graph
 * Optional: anomaly detection or alerting
-Tech:
-* Rust or Go agents
-* Python FastAPI or Go backend
-* Frontend: React/D3 or CLI (ASCII graphs)
-Why it's 🔥:
-* Distributed, real-world use case
-* Gives you a strong visual demo
-* Teaches you about real-world latency and reliability
+* 
+# Later down the line/ slighly more complex and time consuming
+## (33) Distributed Cache
+In-memory cache cluster with eviction policies (LRU/LFU).
 
+Support replication + consistent hashing.
+Expose gRPC/HTTP APIs.
 
 
 ## 55. Music Queue for Parties (Distributed Jukebox)
