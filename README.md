@@ -46,14 +46,13 @@ Backend handles hot-spot traffic (everyone upvoting the same Q).
 * Containers often get dynamic IP addresses (e.g., in Kubernetes, AWS ECS, GCP Cloud Run).
 * Hardcoding addresses (like http://10.0.0.5:8080) doesn’t work because machines can move, die, or scale up/down.
 
-## (44) Live Network Latency Visualizer Across Multiple Locations
-🧩 Like: a “PingMap” of server health
-Features:
-* Deploy ping agents to multiple cloud regions (EC2, fly.io, etc.)
-* Central dashboard aggregates results
-* Visualize latency and outages in a map or graph
-* Optional: anomaly detection or alerting
-* 
+## 55. Music Queue for Parties (Distributed Jukebox)
+Guests join via QR code, queue songs.
+
+Backend prevents duplicates, handles voting to skip.
+
+Store song metadata + votes in Redis/Postgres.
+
 # Later down the line/ slighly more complex and time consuming
 ## (33) Distributed Cache
 In-memory cache cluster with eviction policies (LRU/LFU).
@@ -61,13 +60,6 @@ In-memory cache cluster with eviction policies (LRU/LFU).
 Support replication + consistent hashing.
 Expose gRPC/HTTP APIs.
 
-
-## 55. Music Queue for Parties (Distributed Jukebox)
-Guests join via QR code, queue songs.
-
-Backend prevents duplicates, handles voting to skip.
-
-Store song metadata + votes in Redis/Postgres.
 
 # Personal weekend projects
 ## 66. HTTP Server Built on a Raw TCP Server
