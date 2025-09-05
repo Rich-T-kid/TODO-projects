@@ -46,7 +46,7 @@ Backend handles hot-spot traffic (everyone upvoting the same Q).
 * Containers often get dynamic IP addresses (e.g., in Kubernetes, AWS ECS, GCP Cloud Run).
 * Hardcoding addresses (like http://10.0.0.5:8080) doesn’t work because machines can move, die, or scale up/down.
 
-## 55. Music Queue for Parties (Distributed Jukebox)
+## 33. Music Queue for Parties (Distributed Jukebox)
 Guests join via QR code, queue songs.
 
 Backend prevents duplicates, handles voting to skip.
@@ -54,7 +54,7 @@ Backend prevents duplicates, handles voting to skip.
 Store song metadata + votes in Redis/Postgres.
 
 # Later down the line/ slighly more complex and time consuming
-## (33) Distributed Cache
+## (44) Distributed Cache
 In-memory cache cluster with eviction policies (LRU/LFU).
 
 Support replication + consistent hashing.
@@ -62,6 +62,10 @@ Expose gRPC/HTTP APIs.
 
 
 # Personal weekend projects
+
+## 55 Build your own grep (CodeCrafters);
+* just follow it, seems pretty concise and straightforward compared to other projects on here
+
 ## 66. HTTP Server Built on a Raw TCP Server
 * The TCP server listens for client connections, accepts raw byte streams, and then parses the HTTP request format (method, path, headers, and body).
 * Strengthens skills in network programming, parsing protocols, and managing connections.
@@ -72,6 +76,3 @@ Expose gRPC/HTTP APIs.
 *  persistence (RDB snapshot + AOF), simple replication (REPLCONF/PSYNC), optional LRU eviction;
 *  enchmark with redis-benchmark, containerize, and add C
 
-
-## 88 Build your own grep (CodeCrafters);
-* just follow it, seems pretty concise and straightforward compared to other projects on here
