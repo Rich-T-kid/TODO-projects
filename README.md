@@ -51,7 +51,7 @@ Backend handles hot-spot traffic (everyone upvoting the same Q).
 * Containers often get dynamic IP addresses (e.g., in Kubernetes, AWS ECS, GCP Cloud Run).
 * Hardcoding addresses (like http://10.0.0.5:8080) doesn’t work because machines can move, die, or scale up/down.
 
-## 33. Music Queue for Parties (Distributed Jukebox)
+## 33. Music Queue for Parties (Distributed Jukebox) -> (https://github.com/Rich-T-kid/BeatBus)
 Guests join via QR code, queue songs.
 
 Backend prevents duplicates, handles voting to skip.
