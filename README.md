@@ -17,14 +17,19 @@ Convert to logical plan
 
 Apply cost-based and rule-based optimizations
 
+## 2. Distributed Cache
+In-memory cache cluster with eviction policies (LRU/LFU).
 
-## 2. Distributed Notes/Docs System (Google Docs–lite)
+Support replication + consistent hashing.
+Expose gRPC/HTTP APIs.
+
+## 3. Distributed Notes/Docs System (Google Docs–lite)
 Support concurrent edits with CRDTs or OT (operational transforms).
 
 Store history in a log + snapshots.
 
 
-## 3. Lecture Q&A System with Ranking
+## 4. Lecture Q&A System with Ranking
 Live question posting + upvote/downvote (like Stack Overflow in class).
 
 Needs real-time WebSockets and distributed storage.
@@ -52,13 +57,6 @@ Guests join via QR code, queue songs.
 Backend prevents duplicates, handles voting to skip.
 
 Store song metadata + votes in Redis/Postgres.
-
-# Later down the line/ slighly more complex and time consuming
-## (44) Distributed Cache
-In-memory cache cluster with eviction policies (LRU/LFU).
-
-Support replication + consistent hashing.
-Expose gRPC/HTTP APIs.
 
 
 # Personal weekend projects
