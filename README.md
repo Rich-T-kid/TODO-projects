@@ -46,7 +46,7 @@ Backend handles hot-spot traffic (everyone upvoting the same Q).
 * Support round-robin, least-connections, weighted load balancing.
 * Add health checks + failover.
 
-## (22) Service Discovery + Registry Like Consul or etcd-lite. (Repo) -> (https://github.com/Rich-T-kid/RouteFinder)
+## (22) ~~Service Discovery + Registry Like Consul or etcd-lite~~ (Repo) -> (https://github.com/Rich-T-kid/RouteFinder)
 * In a microservices architecture, services (auth, payments, notifications, etc.) run on many machines or containers.
 * Containers often get dynamic IP addresses (e.g., in Kubernetes, AWS ECS, GCP Cloud Run).
 * Hardcoding addresses (like http://10.0.0.5:8080) doesn’t work because machines can move, die, or scale up/down.
