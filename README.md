@@ -28,17 +28,6 @@ Support concurrent edits with CRDTs or OT (operational transforms).
 
 Store history in a log + snapshots.
 
-
-## 4. Lecture Q&A System with Ranking
-Live question posting + upvote/downvote (like Stack Overflow in class).
-
-Needs real-time WebSockets and distributed storage.
-
-Backend handles hot-spot traffic (everyone upvoting the same Q).
-👉 Great to show scalability under bursty loads.
-
-
-
 # quicker projects that focus on learning
 
 ##  (11) ~~Reverse Proxy with Load Balancing~~ (Repo) -> (https://github.com/Rich-T-kid/PivotProxy)
@@ -61,8 +50,13 @@ Store song metadata + votes in Redis/Postgres.
 
 # Personal weekend projects
 
-## 55 Build your own grep (CodeCrafters);
-* just follow it, seems pretty concise and straightforward compared to other projects on here
+## 55. Lecture Q&A System with Ranking
+Live question posting + upvote/downvote (like Stack Overflow in class).
+
+Needs real-time WebSockets and distributed storage.
+
+Backend handles hot-spot traffic (everyone upvoting the same Q).
+👉 Great to show scalability under bursty loads.
 
 ## 66. HTTP Server Built on a Raw TCP Server
 * The TCP server listens for client connections, accepts raw byte streams, and then parses the HTTP request format (method, path, headers, and body).
