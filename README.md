@@ -57,7 +57,7 @@ Needs real-time WebSockets and distributed storage.
 Backend handles hot-spot traffic (everyone upvoting the same Q).
 👉 Great to show scalability under bursty loads.
 
-## 66. HTTP Server Built on a Raw TCP Server
+## 66. ~~HTTP Server Built on a Raw TCP Server~~ -> (https://github.com/Rich-T-kid/Custom-HTTP-Server)
 * The TCP server listens for client connections, accepts raw byte streams, and then parses the HTTP request format (method, path, headers, and body).
 * Strengthens skills in network programming, parsing protocols, and managing connections.
 
