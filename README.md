@@ -17,7 +17,7 @@ Convert to logical plan
 
 Apply cost-based and rule-based optimizations
 
-## 2. Distributed Cache
+## 2. Distributed Cache -> (https://github.com/Rich-T-kid/RapidStore)
 In-memory cache cluster with eviction policies (LRU/LFU).
 
 Support replication + consistent hashing.
@@ -62,8 +62,16 @@ Backend handles hot-spot traffic (everyone upvoting the same Q).
 * Strengthens skills in network programming, parsing protocols, and managing connections.
 
 
-## 77 Implement Redis (CodeCrafters): build a Redis-compatible server from scratch—RESP parser, 
-* PING/ECHO/SET/GET/DEL/INCR, key expirations (EX/PEX), pipelining, basic transactions (MULTI/EXEC),
-*  persistence (RDB snapshot + AOF), simple replication (REPLCONF/PSYNC), optional LRU eviction;
-*  enchmark with redis-benchmark, containerize, and add C
+## 77 Custom In-Memory SQL Query Engine
+
+**What:** Build an in-memory columnar cache that parses basic SQL (SELECT, WHERE, GROUP BY), converts to AST → logical plan → physical plan, and executes column-by-column with vectorized operators (scan, filter, projection, aggregate).
+
+**Why:** Combines two critical database concepts—SQL query planning and columnar execution—showing how modern analytics engines like Trino/Arrow work under the hood.
+
+**Takeaways:**
+- Parse SQL into AST and map to relational algebra operators
+- Execute queries column-by-column for cache efficiency and vectorization
+- Understand why "batch-at-a-time" beats "row-at-a-time" processing
+- Learn transformation rules (predicate pushdown, join reordering)
+- Appreciate Arrow's memory model and SIMD optimization opportunities
 
