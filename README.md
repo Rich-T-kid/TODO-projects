@@ -23,7 +23,7 @@ In-memory cache cluster with eviction policies (LRU/LFU).
 Support replication + consistent hashing.
 Expose gRPC/HTTP APIs.
 
-## 3. Distributed Notes/Docs System (Google Docs–lite) -> (https://github.com/Rich-T-kid/Draftly)
+## 3. ~~Distributed Notes/Docs System~~ (Google Docs–lite) -> (https://github.com/Rich-T-kid/Draftly)
 Support concurrent edits with CRDTs or OT (operational transforms).
 
 Store history in a log + snapshots.
