@@ -49,13 +49,11 @@ Store song metadata + votes in Redis/Postgres.
 
 # Personal weekend projects
 
-## 55. Lecture Q&A System with Ranking
-Live question posting + upvote/downvote (like Stack Overflow in class).
-
-Needs real-time WebSockets and distributed storage.
-
-Backend handles hot-spot traffic (everyone upvoting the same Q).
-👉 Great to show scalability under bursty loads.
+## 55. Movie Recommendation Engine with Real-Time Collaborative Filtering
+Graph traversal performance when computing "users who liked X also liked Y" across large datasets
+Real-time graph updates as new ratings come in
+AI Driven?
+Given a list of movies or anime or any form of media, reccomend x movies, should get better over time and learn what users like
 
 ## 66. ~~HTTP Server Built on a Raw TCP Server~~ -> (https://github.com/Rich-T-kid/Custom-HTTP-Server)
 * The TCP server listens for client connections, accepts raw byte streams, and then parses the HTTP request format (method, path, headers, and body).
