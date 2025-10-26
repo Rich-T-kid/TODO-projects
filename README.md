@@ -17,6 +17,19 @@ Convert to logical plan
 
 Apply cost-based and rule-based optimizations
 
+## (1.5) Custom In-Memory SQL Query Engine
+
+**What:** Build an in-memory columnar cache that parses basic SQL (SELECT, WHERE, GROUP BY), converts to AST → logical plan → physical plan, and executes column-by-column with vectorized operators (scan, filter, projection, aggregate).
+
+**Why:** Combines two critical database concepts—SQL query planning and columnar execution—showing how modern analytics engines like Trino/Arrow work under the hood.
+
+**Takeaways:**
+- Parse SQL into AST and map to relational algebra operators
+- Execute queries column-by-column for cache efficiency and vectorization
+- Understand why "batch-at-a-time" beats "row-at-a-time" processing
+- Learn transformation rules (predicate pushdown, join reordering)
+- Appreciate Arrow's memory model and SIMD optimization opportunities
+
 ## 2. Distributed Cache -> (https://github.com/Rich-T-kid/RapidStore)
 In-memory cache cluster with eviction policies (LRU/LFU).
 
@@ -49,24 +62,18 @@ Store song metadata + votes in Redis/Postgres.
 
 # Personal weekend projects
 
-## 55. Custom Parquet reader
-Implement a parquet reader that takes in a parquet file and prints it out in a pretty format
-
-## 66. ~~HTTP Server Built on a Raw TCP Server~~ -> (https://github.com/Rich-T-kid/Custom-HTTP-Server)
+## 55. ~~HTTP Server Built on a Raw TCP Server~~ -> (https://github.com/Rich-T-kid/Custom-HTTP-Server)
 * The TCP server listens for client connections, accepts raw byte streams, and then parses the HTTP request format (method, path, headers, and body).
 * Strengthens skills in network programming, parsing protocols, and managing connections.
 
+## 66. Custom Parquet reader
+* Implement a parquet reader that takes in a parquet file and prints it out in a pretty format
 
-## 77 Custom In-Memory SQL Query Engine
+## 77 Custom json validator and parser
+* take in json and check that its valid
+* parse the json and grab its values
+* no built in json librarys
 
-**What:** Build an in-memory columnar cache that parses basic SQL (SELECT, WHERE, GROUP BY), converts to AST → logical plan → physical plan, and executes column-by-column with vectorized operators (scan, filter, projection, aggregate).
-
-**Why:** Combines two critical database concepts—SQL query planning and columnar execution—showing how modern analytics engines like Trino/Arrow work under the hood.
-
-**Takeaways:**
-- Parse SQL into AST and map to relational algebra operators
-- Execute queries column-by-column for cache efficiency and vectorization
-- Understand why "batch-at-a-time" beats "row-at-a-time" processing
-- Learn transformation rules (predicate pushdown, join reordering)
-- Appreciate Arrow's memory model and SIMD optimization opportunities
+## 88 Very basic LSM tree implementation
+* Implement and test LSM tree Implementation
 
