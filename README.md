@@ -30,7 +30,7 @@ Apply cost-based and rule-based optimizations
 - Learn transformation rules (predicate pushdown, join reordering)
 - Appreciate Arrow's memory model and SIMD optimization opportunities
 
-## 2. Distributed Cache -> (https://github.com/Rich-T-kid/RapidStore)
+## 2. ~~Distributed Cache~~ -> (https://github.com/Rich-T-kid/RapidStore)
 In-memory cache cluster with eviction policies (LRU/LFU).
 
 Support replication + consistent hashing.
