@@ -69,7 +69,7 @@ Store song metadata + votes in Redis/Postgres.
 ## 66. Custom Parquet reader
 * Implement a parquet reader that takes in a parquet file and prints it out in a pretty format
 
-## 77 Custom json validator and parser
+## 77 ~~Custom json validator and parser~~ -> (https://github.com/Rich-T-kid/ParseJJ)
 * take in json and check that its valid
 * parse the json and grab its values
 * no built in json librarys
