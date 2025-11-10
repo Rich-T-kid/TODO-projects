@@ -17,7 +17,7 @@ Convert to logical plan
 
 Apply cost-based and rule-based optimizations
 
-## (1.5) Custom In-Memory SQL Query Engine
+## (1.5) Custom In-Memory SQL Query Engine -> (https://github.com/Rich-T-kid/OptiSQL)
 
 **What:** Build an in-memory columnar cache that parses basic SQL (SELECT, WHERE, GROUP BY), converts to AST → logical plan → physical plan, and executes column-by-column with vectorized operators (scan, filter, projection, aggregate).
 
@@ -66,7 +66,7 @@ Store song metadata + votes in Redis/Postgres.
 * The TCP server listens for client connections, accepts raw byte streams, and then parses the HTTP request format (method, path, headers, and body).
 * Strengthens skills in network programming, parsing protocols, and managing connections.
 
-## 66. Custom Parquet reader
+## 66. ~~working with Parquet reader~~ -> (https://github.com/Rich-T-kid/pq-golang-reader)
 * Implement a parquet reader that takes in a parquet file and prints it out in a pretty format
 
 ## 77 ~~Custom json validator and parser~~ -> (https://github.com/Rich-T-kid/ParseJJ)
