@@ -74,6 +74,6 @@ Store song metadata + votes in Redis/Postgres.
 * parse the json and grab its values
 * no built in json librarys
 
-## 88 Very basic LSM tree implementation
-* Implement and test LSM tree Implementation
+## 88 ~~Very inverted index implementation~~ -> (https://github.com/Rich-T-kid/CrawlStack)
+* Implement and test inverse index
 
