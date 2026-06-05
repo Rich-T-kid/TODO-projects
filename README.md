@@ -1,4 +1,4 @@
-# TODO-projects fall semester
+# TODO-projects fall semester [FINSIHED!!!!]
 
 ## (1) ~~LSM Tree~~ -> (https://github.com/Rich-T-kid/rusty-swift-merge)
 
