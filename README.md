@@ -1,23 +1,19 @@
 # TODO-projects fall semester
 
-## (1) Build SQLite (Similar)
+## (1) ~~LSM Tree~~ -> (https://github.com/Rich-T-kid/rusty-swift-merge)
 
-Mini Projects (day-long, gist of the concept):
-Buffer pool, Join, B+ Tree, Skip list, K-way external merge, SQL parser, Logical planner, Logical-to-physical planner, Write-ahead log
+**What:** Mini Projects (day-long, gist of the concept):
+MemTable (sorted in-memory buffer), SSTable (sorted string table flush to disk), bloom filter, sparse index, compaction (size-tiered and leveled), WAL for crash recovery, block cache, tombstone/deletion markers
 
-Database Query Optimizer Playground (capstone project):
-
-Browser or mobile app frontend to visualize query plans
-
+### LSM Storage Engine:
+Browser or CLI frontend to visualize compaction and read/write amplification in real time  
 Backend in Go/Rust to:
+- Accept key-value reads and writes
+- Maintain MemTable with WAL
+- Flush SSTables to disk with block and bloom filter indexes
+- Run background compaction and show level structure
 
-Parse SQL
-
-Convert to logical plan
-
-Apply cost-based and rule-based optimizations
-
-## (1.5) Custom In-Memory SQL Query Engine -> (https://github.com/Rich-T-kid/OptiSQL)
+## (1.5) ~~Custom In-Memory SQL Query Engine~~ -> (https://github.com/Rich-T-kid/OptiSQL)
 
 **What:** Build an in-memory columnar cache that parses basic SQL (SELECT, WHERE, GROUP BY), converts to AST → logical plan → physical plan, and executes column-by-column with vectorized operators (scan, filter, projection, aggregate).
 
